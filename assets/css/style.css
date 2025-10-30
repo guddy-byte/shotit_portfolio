@@ -777,11 +777,13 @@ main {
 
 .clients-item img {
   width: 100%;
-  filter: grayscale(1);
+  filter: brightness(0) invert(1); /* Makes image white */
   transition: var(--transition-1);
 }
 
-.clients-item img:hover { filter: grayscale(0); }
+.clients-item img:hover { 
+  filter: brightness(0) saturate(100%) invert(83%) sepia(24%) saturate(638%) hue-rotate(332deg) brightness(103%) contrast(96%); /* Makes image #f7cf68 */
+}
 
 
 

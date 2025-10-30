@@ -829,6 +829,22 @@ main {
   line-height: 1.6;
 }
 
+/* Timeline lists: ensure bullets show and items have readable spacing */
+ul.timeline-text,
+.timeline-text ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin: 0.75rem 0 1.25rem 1.5rem; /* top right bottom left — more breathing room */
+  padding: 0;
+}
+
+ul.timeline-text li,
+.timeline-text ul li {
+  display: list-item; /* override global reset */
+  margin-bottom: 1rem; /* increased spacing for readability */
+  line-height: 1.6;
+}
+
 
 /**
  * skills 

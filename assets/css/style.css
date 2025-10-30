@@ -506,6 +506,33 @@ main {
 
 .about-text p { margin-bottom: 15px; }
 
+/* Personal Philosophy quote styling */
+.personal-quote {
+  color: var(--white-2);
+  background: transparent;
+  font-style: italic;
+  padding: 14px 18px;
+  margin: 12px 0 22px 0;
+  border-left: 4px solid var(--orange-yellow-crayola);
+  border-radius: 8px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.personal-quote p { margin: 0; font-size: var(--fs-6); }
+
+/* Subtle decorative large quote mark (optional on larger screens) */
+.personal-quote::before {
+  content: '“';
+  position: absolute;
+  left: 10px;
+  top: -6px;
+  font-size: 48px;
+  color: var(--orange-yellow-crayola);
+  opacity: 0.08;
+  pointer-events: none;
+}
+
 
 
 /**
